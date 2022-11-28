@@ -6,9 +6,10 @@
 
 .chip {
   display: inline-block;
-  padding: 0 100px;
+  padding: 0px 100px;
   margin: 80px 20px -10px 0px;
-  height: 100px;
+  height: 140px;
+  width: 1000px;
   font-size: 28px;
   line-height: 100px;
   border-radius: 100px;
@@ -17,11 +18,16 @@
 
 .chip img {
   float: left;
-  margin: -80px 20px -10px 0px;
+  margin: -60px 20px -10px 0px;
   height: 200px;
   width: 200px;
   border-radius: 100%;
 }
+
+html * {
+        font-size: 16px;
+        font-family: Arial;
+      }
 </style>
 
 </head>
@@ -29,30 +35,27 @@
 
 
 <div class="chip">
-  <img src="Data/footprint.JPG" alt="Person" width="500" height="200">
-  <p style="font-size:50px;">Alex Tang</p>
+  <img src="Data/footprint.JPG" alt="Person" width="500" >
+  <span style="font-size:60px; font-family:Snell Roundhand; color:white"> Alex Tang </span> 
+  <span style="font-size:30px; font-family:Snell Roundhand; color:lightgrey"> An eager learner, map lover... Class 2023 </span>
 </div>
 
+<p style="font-size:20px; background-color:white; color:grey" > &nbsp &nbsp &nbsp A picture is worth a thousand words; A journey of a thousand miles begins with a single step.  </p>
 
-<p style="font-size:20px;" > <strong> <font color='darkblue'> An eager learner, map lover, ... Class 2023 ... </font> </strong> </p>
-
-
+<hr style="border: 3px dotted grey"/>
 <hr style="border: 1px dotted white"/>
-<hr style="border: 1px dotted black"/>
 
-
-<h2>My Fun Coding Projects on Data Visulization</h2>
-(please click the links to browse)
+<h1 style="font-size:26px; color:grey"> My Fun Coding Projects on Data Visualization<p style="font-size:16px; color:grey"> (please click the links to browse) </p> </h1>
 
 <ul>
 <dl>
   <dt> <h3> 1. Colleges on Map </h3> </dt>
-  <dd>- <a href="https://github.com/aleeshen/college-map" style="font-size: 18px; target="_blank" rel="noopener noreferrer"> Project: Colleges on Map (github link) </a> </dd>
-  <dd>- <a href="https://aleeshen.github.io/college_map.html" style="font-size: 18px; target="_blank" rel="noopener noreferrer"> webpage of the result</a> </dd>
+  <dd>- <a href="https://github.com/aleeshen/college-map" style="font-size: 18px;" target="_blank" rel="noopener noreferrer"> Project: Colleges on Map (github link) </a> </dd>
+  <dd>- <a href="https://aleeshen.github.io/college_map.html" style="font-size: 18px;" target="_blank" rel="noopener noreferrer"> webpage of the result</a> </dd>
   
   <dt> <h4> Summary </h4> </dt>
   
-  <p style="font-size:18px;" > <font color='darkblue'> 
+  <p style="font-size:16px; color:darkblue"> 
   
   Using acceptance rates, admission yield rates, student/faculty ratios, and SAT scores, I clustered the US colleges providing doctoral degrees, and show the between-group difference in distribution for three selected features. Group 4, consisting of some prestigious colleges, is highlighted in red in the bar plots.
   <br><br>
@@ -64,37 +67,34 @@
   
   <img src="Data/screenshots_map.jpg" alt="screenshots" height="580">
   
-  <p style="font-size:18px;" > <font color='darkblue'> 
+  <p style="font-size:16px; color:darkblue"> 
   
-  Visualization is an effective way to identify patterns and outliers, even errors, in data, especially for large and messy datasets. For example, in this project, I easily spotted an error in the College Scorecard about the geographical location of a Florida college, Ana G. Mendez University (<a href=https://collegescorecard.ed.gov/school/?483595-Ana-G-Mendez-University target="_blank" rel="noopener noreferrer"> collegescorecard.ed.gov - link to this college </a>). 
+  Visualization is an effective way to identify patterns, outliers, and even errors, in data, especially for large and messy datasets. For example, in this project, I easily spotted an error in the College Scorecard about the geographical location of a Florida college, Ana G. Mendez University (<a href=https://collegescorecard.ed.gov/school/?483595-Ana-G-Mendez-University target="_blank" rel="noopener noreferrer"> collegescorecard.ed.gov - link to this college </a>). 
   <br><br>
-  In above screenshots, we can see that this college was mapped to Puerto Rico by mistake at the bottom right corner. Similarly, the error can be observed from the map in the website at <a href=https://collegescorecard.ed.gov/school/?483595-Ana-G-Mendez-University target="_blank" rel="noopener noreferrer"> collegescorecard.ed.gov</a>. I am contacting the website for a correction.
+  In above screenshots, we can see that this college was mapped to Puerto Rico by mistake at the bottom right corner. Similarly, the error exists with the map in the website at <a href=https://collegescorecard.ed.gov/school/?483595-Ana-G-Mendez-University target="_blank" rel="noopener noreferrer"> collegescorecard.ed.gov</a>. I am contacting the website for a correction.
   
   </font> </p>
   
-  <dt> <h3> 2. College Map Dashboard </h3> </dt>
-  <dd>- <a href="https://github.com/aleeshen/College_Map_Dashboard" style="font-size: 18px; target="_blank" rel="noopener noreferrer"> Project: College Map Dashboard (github link)</a> </dd>
-  <dd>- <a href="https://alex-college-map.streamlit.app/" style="font-size: 18px; target="_blank" rel="noopener noreferrer"> webpage of the app (to be deployed...) </a> </dd>
-  
+    <dt> <h3> 2. College Map Dashboard </h3> </dt>
+
+  <dd>- <a href="https://github.com/aleeshen/College_Map_Dashboard" style="font-size: 18px;" target="_blank" rel="noopener noreferrer"> Project: College Map Dashboard (github link) </a> </dd>
+  <dd>- <a href="https://alex-college-map.streamlit.app/" style="font-size: 18px;" target="_blank" rel="noopener noreferrer"> webpage of the app (to be deployed...) </a> </dd>
+
   <dt> <h4> Summary </h4> </dt>
   
-  <p style="font-size:18px;" > <font color='darkblue'> 
+  <p style="font-size:16px; color:darkblue"> 
   
-  Using the data collected in the last project, I have built a dashboard app using python package Streamlit. The purpose is to provide a quick way for users to learn the basic facts about a college by just hovering and clicking. To use it, we can select a State and then College from the sidebar menus to localize all associated schools with markers on map. Hovering over the markers will display some facts, and clicking the selected one, which is distinctly displayed as a star marker, will render further information in a popup frame. More facts can be added later on.
+  Using the data collected in the first project, I have built a dashboard app using python package Streamlit. The purpose is to provide a quick way for users to learn the basic facts about a college by just hovering and clicking. To use it, we can select a State and then College from the sidebar menus to label all associated schools with markers on map. Hovering over the markers will display some facts, and clicking on the selected one, which is distinctly displayed as a star marker, will provide further information in a popup frame. More facts can be added later on.
   <br><br>
-  A screenshot in below demonstrates the basic function of the app. Please try the app (to be deployed) by following the above link for details. This app is compatible with Google Chome browser, but is known to have an issue for popup with Safari.
+  A screenshot in below demonstrates the basic utilities of the app. Please try the app (to be deployed) by following the above link for details. This app is compatible with Google Chome browser, but is known to have an issue for popup with Safari.
   
   </font> </p>
-  
   <img src="Data/screenshot_dash.jpg" alt="screenshots" width="1000">
-  
-  <p style="font-size:16px;" > <font color='darkblue'> 
-  
+  <p style="font-size:16px; color:darkblue"> 
   
   </font> </p>
   
 </dl>
-
 </ul>
 
 </body>
