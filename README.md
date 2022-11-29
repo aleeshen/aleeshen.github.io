@@ -1,3 +1,3 @@
 # aleeshen.github.io
-Please open the webpages via the included links:
-https://aleeshen.github.io/index.html
+Please read my Github homepage and the embedded pages for my fun projects:
+https://aleeshen.github.io
