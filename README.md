@@ -1,3 +1,3 @@
 # aleeshen.github.io
-Please read my Github homepage and the embedded pages for my projects:
+Please read my GitHub homepage with the embedded links to my projects:
 https://aleeshen.github.io
