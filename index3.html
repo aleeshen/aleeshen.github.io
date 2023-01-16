@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.chip {
+  display: inline-block;
+  padding: 0px 100px;
+  margin: 80px 20px -10px 0px;
+  height: 140px;
+  width: 1000px;
+  font-size: 28px;
+  line-height: 100px;
+  border-radius: 100px;
+  background-color: #117864;
+}
+
+.chip img {
+  float: left;
+  margin: -60px 20px -10px 0px;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+
+#popimage  
+{  
+  height:100px;  
+  #float:left;  
+  #position:relative;  
+}  
+#popimage:hover img  
+{ 
+  float:left;  
+  position: relative;
+  height: 600px;
+  opacity: 1;
+  cursor:pointer;
+}
+
+#hovimg  
+{  
+  height:100px;  
+   /*display:inline-block; flex */
+   display: block;
+    align-items: left;
+    width: auto;
+    padding:10px;
+    justify-content: space-between;
+   /* margin:1px;
+    border:1px solid #ccc; */
+    transition-delay:0s;
+}  
+#hovimg:hover img  
+{  
+  height: 400px;  
+  opacity: 1;
+  cursor:zoom-in;
+  position: absolute;
+  overflow:visible;
+  
+}
+
+html * {
+        font-size: 16px;
+        font-family: Arial;
+      }
+      
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 0.1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border:none; /* 0.1px solid #ccc;*/
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #AED6F1;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #73C6B6;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div class="chip">
+  <img src="Data/biking.png" alt="Person" width="500" >
+  <span style="font-size:60px; font-family:Snell Roundhand; color:white"> Alex Tang </span> 
+  <span style="font-size:30px; font-family:Snell Roundhand; color:lightgrey"> An eager learner, map lover... </span>
+</div>
+
+<p style="font-size:20px; background-color:white; color:grey" > &nbsp &nbsp &nbsp A picture is worth a thousand words; A journey of a thousand miles begins with a single step.  </p>
+
+<hr style="border: 3px dotted grey"/>
+<hr style="border: 1px dotted white"/>
+
+
+
+<div class="tab">
+
+  <button class="tablinks" onclick="openTab(event, 'Certificates')" id="defaultOpen" > <li>Certificates</li>  </button>
+  <button class="tablinks" onclick="openTab(event, 'geomap')"><li>Colleges on Map</li></button>
+  <button class="tablinks" onclick="openTab(event, 'geodash')"><li>College Map Dashboard</li></button>
+  <button class="tablinks" onclick="openTab(event, 'image')"><li>Image</li></button>
+  
+
+</div>
+
+<div id="Certificates" class="tabcontent">
+
+  <dt> <h3> 1. Coursera: Machine Learning Specialization; by Stanford University, DeepLearning.AI </h3> </dt>
+  <a href="https://coursera.org/verify/specialization/M3D8SJHRBMNQ" style="font-size: 16px;" target="_blank" rel="noopener noreferrer"> Certificate (hover over thumbnail to enlarge and move away to return; click here to verify on Coursera) </a>
+ 
+
+   <div id="hovimg">
+   <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~M3D8SJHRBMNQ/CERTIFICATE_LANDING_PAGE~M3D8SJHRBMNQ.jpeg" alt="certificate" height="100">
+   </div>
+
+
+  <p style="font-size:16px; color:darkblue"> 
+  
+  Finally, I made it on time - the best new year gift from Andrew Ng!
+  
+  </p>
+  
+    <dt> <h3> 2. edX: Data Science: Visualization; by Harvard University </h3> </dt>
+    <a href="https://courses.edx.org/certificates/8efbcf9eb14749edb33e5691916bd7df" style="font-size: 16px;" target="_blank" rel="noopener noreferrer"> Certificate (hover over thumbnail to enlarge and move away to return; click here to verify on edX) </a>
+   
+
+     <div id="popimage">
+     <img src="Data/data_vis_certificate.png" alt="certificate" height="100">
+     </div>
+
+
+    <p style="font-size:16px; color:darkblue"> 
+    
+    My first online course certificate arrived in snow - long due!
+    
+    </p>
+  
+    
+</div>
+
+</div>
+
+
+<div id="geomap" class="tabcontent">
+
+  <dt> <h3> Colleges on Map </h3> </dt>
+  
+  <dd>- <a href="https://github.com/aleeshen/college-map" style="font-size: 18px;" target="_blank" rel="noopener noreferrer"> Project: Colleges on Map (github link) </a> </dd>
+  <dd>- <a href="https://aleeshen.github.io/college_map.html" style="font-size: 18px;" target="_blank" rel="noopener noreferrer"> webpage of the result</a> </dd>
+  
+  <dt> <h4> Summary </h4> </dt>
+  
+  <p style="font-size:16px; color:darkblue"> 
+  
+  Using acceptance rates, admission yield rates, student/faculty ratios, and SAT scores, I clustered the US colleges offering doctoral degrees, and showed the between-group difference in distribution for three selected features. Group 4, consisting of some prestigious colleges, is highlighted in red in the bar plots.
+  <br><br>
+  I also localized colleges on map with some information viewable by hovering or clicking mouse. This project was complemented with Python packages.
+  <br><br>
+  Two screenshots below demonstrate some of the outcomes. Please see the webpage of the result by following the above link for details.
+  
+  </font> </p>
+  
+  <img src="Data/screenshots_map.jpg" alt="screenshots" height="580">
+  
+  <p style="font-size:16px; color:darkblue"> 
+  
+  Visualization is an effective way to identify patterns, outliers, and even errors, in data, especially for large and messy datasets. For example, in this project, I easily spotted an error in the College Scorecard about the geographical location of a Florida college, Ana G. Mendez University (<a href=https://collegescorecard.ed.gov/school/?483595-Ana-G-Mendez-University target="_blank" rel="noopener noreferrer">collegescorecard.ed.gov - link to this college</a>). As shown in the above, at the bottom right of the screenshot we can see that this college was mapped to Puerto Rico by mistake. This error is similarly seen (at the time of writing) with the map in the website at <a href=https://collegescorecard.ed.gov/school/?483595-Ana-G-Mendez-University target="_blank" rel="noopener noreferrer"> collegescorecard.ed.gov</a>. I am contacting the website for a correction.
+  
+  </font> </p>
+  
+</div>
+  
+  
+<div id="geodash" class="tabcontent">
+    <dt> <h3> College Map Dashboard </h3> </dt>
+
+  <dd>- <a href="https://github.com/aleeshen/College_Map_Dashboard" style="font-size: 18px;" target="_blank" rel="noopener noreferrer"> Project: College Map Dashboard (github link) </a> </dd>
+  <dd>- <a href="https://alex-college-map.streamlit.app/" style="font-size: 18px;" target="_blank" rel="noopener noreferrer"> webpage of the app (to be deployed...) </a> </dd>
+
+  <dt> <h4> Summary </h4> </dt>
+  
+  <p style="font-size:16px; color:darkblue"> 
+  
+  Using the data collected in the first project, I have built a dashboard app using Python package Streamlit. The purpose is to provide a quick way for users to learn the basic facts about a college by just hovering and clicking. To use it, we can select a State and then College from the sidebar menus to label all associated schools with markers on map. Hovering over the markers will display some facts, and clicking on the selected one, which is distinctly displayed as a star marker, will provide further information in a popup frame. More facts can be added later on.
+  <br><br>
+  A screenshot in below demonstrates the basic utilities of the app. Please try the app for details, either locally or on Streamlit Cloud following the above link (deployment is NOT through yet at the time of editing). It is compatible with Google Chrome browser and is known to have an issue for popup with Safari.
+  
+  </font> </p>
+  <img src="Data/screenshot_dash.jpg" alt="screenshots" width="1000">
+  <p style="font-size:16px; color:darkblue"> 
+  
+  </font> </p>
+
+  </div>
+  
+<div id="image" class="tabcontent">
+  <dt> <h3> Image processing </h3> </dt>
+
+    <dd>- <a href="https://github.com/aleeshen/image" style="font-size: 18px;" target="_blank" rel="noopener noreferrer"> Project: Image processing (github link) </a> </dd>
+
+    <dt> <h4> Summary </h4> </dt>
+    
+    <p style="font-size:16px; color:darkblue"> 
+    
+    Image data are being explosively generated nowadays. They contain a huge amount of information. And thus image processing has become an important field in computer and data science. It has broad applications in medical imaging, computer vision, robotics, industrial inspection, etc. 
+        
+    <br><br>
+    Python is one of the popular tools for this purpose. I am interested in using Python to process images. I have started learning some basic operations, such as resizing, denoising, and segmentation. Deep learning is a great approach for many tasks in this field, and it is something one has to grasp and use.
+    <br><br>
+    
+    In the below, I put together several pictures, showing some frequently used processing procedures. BTW, I like to use this footprint as it meant a great start for me - well begun is half done!
+    
+    </font> </p>
+    <img src="Data/processed_imgs.png" alt="screenshots" width="500">
+    <p style="font-size:16px; color:darkblue"> 
+    
+     I also tried to blend two pictures after some processing: playing <i>foot</i>ball (or soccer?) on the <i>foot</i>print.
+     <br><br>
+     For two pictures to be merged, they must be in same size. It took me a while to be able to resize pictures without stretching (change the width/height ratio) - so there created some extra spaces in edges. I tried to fill the spaces with color to best match the main part. It is obvious that the current colors are not very aesthetic - it requires more efforts and skills to sync the colors, and so I am continuing the journey...
+     <br><br>
+     <img src="Data/fused_imgs.png" alt="screenshots" width="500">
+     <p style="font-size:16px; color:darkblue"> 
+     
+     </font> </p>
+  
+</div>
+
+
+</body>
+</html>
+
+<script>
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
